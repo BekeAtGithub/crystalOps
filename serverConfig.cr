@@ -18,3 +18,5 @@ end
 
 update_system
 clean_system
+
+# usage: crystal run server_update.cr
