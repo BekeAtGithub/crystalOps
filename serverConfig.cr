@@ -1,6 +1,5 @@
 #interacts with system files, running shell commands, or using APIs.
 
-# server_update.cr
 # can run ad-hoc commands on VM
 def run_command(command : String)
   puts "Running: #{command}"
