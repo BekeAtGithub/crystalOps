@@ -39,6 +39,6 @@ In this example log:
 
 # Example Command to Run:
 
-crystal run change_failure_rate.cr
+crystal run ChFailRate.cr
 
 
