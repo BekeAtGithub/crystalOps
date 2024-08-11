@@ -1,4 +1,5 @@
 the MeanTimeRecover.Cr Crystal script to measure the Mean Time To Recovery (MTTR), which calculates the average time it takes to recover from a failure based on a log file. The script will look for failure and recovery events in the log and calculate the time difference between them.
+provides a basic method for calculating the Mean Time To Recovery and can be adapted to different log formats and environments.
 
 1. Log Parsing:
    - `parse_log_file(log_file)`: This function reads the log file line by line and extracts timestamps for failures and recoveries.
@@ -39,4 +40,4 @@ In this example log:
 Example Command to Run:
 crystal run MeanTimeRecover.Cr
 
-This script provides a basic method for calculating the Mean Time To Recovery and can be adapted to different log formats and environments.
+
