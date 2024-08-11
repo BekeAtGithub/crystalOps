@@ -13,7 +13,7 @@ it provides a basic way to measure the Change Failure Rate, can be tweaked to sp
 3. Execution:
    - Main Function: The `main` function sets the log file path and calculates the CFR. It then prints the CFR to the console, rounded to two decimal places.
 
-# Usage:
+Usage:
 
 1. Prepare the Log File: Ensure that your deployment log file contains entries that the script can recognize, such as "deployment started", "deployment failed", "rollback", or "hotfix".
 
@@ -21,9 +21,8 @@ it provides a basic way to measure the Change Failure Rate, can be tweaked to sp
 
 3. Run the Script: Execute the script using the Crystal compiler. The script will output the Change Failure Rate as a percentage.
 
-# Example Log File (`deployment.log`):
-
-```plaintext
+Example Log File (`deployment.log`):
+~~~
 2024-08-08 12:00:00 deployment started for version 1.0.0
 2024-08-08 12:30:00 deployment succeeded for version 1.0.0
 2024-08-09 14:00:00 deployment started for version 1.1.0
@@ -31,14 +30,13 @@ it provides a basic way to measure the Change Failure Rate, can be tweaked to sp
 2024-08-09 15:00:00 rollback to version 1.0.0
 2024-08-10 11:00:00 deployment started for version 1.2.0
 2024-08-10 11:30:00 deployment succeeded for version 1.2.0
-```
+~~~
 
 In this example log:
 - There are three deployments (`deployment started`), and one of them failed (`deployment failed`), followed by a rollback (`rollback`).
 - The script would calculate a Change Failure Rate of 33.33% based on this data.
 
-# Example Command to Run:
-
+Example Command to Run:
 crystal run ChFailRate.cr
 
 
