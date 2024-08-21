@@ -26,5 +26,4 @@ sleep 5
 stop_container(container_name)
 container_status(container_name)
 
-
 #usage : crystal run containerManager.cr
