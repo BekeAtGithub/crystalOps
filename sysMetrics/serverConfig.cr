@@ -5,7 +5,7 @@ def run_command(command : String)
   puts "Running: #{command}"
   system(command)
 end
-#can run updates on vm
+#can run updates on vm 
 def update_system
   run_command("sudo apt-get update")
   run_command("sudo apt-get upgrade -y")
