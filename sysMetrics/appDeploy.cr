@@ -29,4 +29,4 @@ clone_or_pull_repo(repository_url, deploy_directory)
 build_application(deploy_directory)
 restart_service("your-app-service")
 
-# usage: crystal run appDeploy.cr
+# usage: crystal run appDeploy.cr 
