@@ -38,5 +38,5 @@ In this example log:
 
 Example Command to Run:
 crystal run ChFailRate.cr
-
+ 
 
