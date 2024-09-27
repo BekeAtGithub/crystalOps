@@ -4,7 +4,7 @@
 def get_cpu_usage
   `top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}'`.strip.to_f
 end
-#use free -m to get disk swap and memory utilization 
+#use free -m to get disk swap and memory utilization  
 def get_memory_usage
   total = `free -m | awk '/Mem:/ { print $2 }'`.strip.to_i
   used = `free -m | awk '/Mem:/ { print $3 }'`.strip.to_i
