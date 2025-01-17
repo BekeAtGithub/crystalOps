@@ -21,4 +21,3 @@ loop do
   sleep 5
 end
 
-# usage: crystal run monitor.cr
