@@ -1,5 +1,3 @@
-# containerManager.cr 
-
 container_name = "myDockerContainer"
 
 def run_command(command : String)
@@ -25,5 +23,3 @@ container_status(container_name)
 sleep 5
 stop_container(container_name)
 container_status(container_name)
-
-#usage : crystal run containerManager.cr
