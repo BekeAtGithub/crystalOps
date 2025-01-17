@@ -25,4 +25,3 @@ end
 create_backup(backup_source, backup_destination, timestamp)
 clean_old_backups(backup_destination, 5)
 
-#usage crystal run crystalBackup.cr
