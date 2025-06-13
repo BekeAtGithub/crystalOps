@@ -1,4 +1,4 @@
-container_name = "myDockerContainer"
+container_name = "myDockerContainer "
 
 def run_command(command : String)
   puts "Running: #{command}"
