@@ -1,4 +1,4 @@
-#Change Failure Rate (CFR)
+#Change Failure Rate / CFR
 #the ratio of failed deployments to the total number of deployments.  
 #Read from a log file to count the number of deployments and how many of those deployments resulted in failures.
 
