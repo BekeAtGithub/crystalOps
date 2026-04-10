@@ -1,15 +1,15 @@
 require "socket"
 
-# Define the host and port for the server
+#define the host and port for the server
 HOST = "127.0.0.1"
 PORT = 3000
 
-# Create a new TCPServer instance to listen for incoming connections 
+#create a new TCPServer instance to listen for incoming connections 
 server = TCPServer.new(HOST, PORT)
 
 puts "Server is running on #{HOST}:#{PORT}"
 
-# Start an infinite loop to handle incoming connections
+#start an infinite loop to handle incoming connections
 loop do
   # Accept an incoming connection
   client = server.accept
